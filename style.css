@@ -21,35 +21,35 @@
 
 #My-Skills h2{
     font-family: serif;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
 }
 #My-Skills h3{
     font-family: sans-serif;
-    font-size:35px;
+    font-size:25px;
     font-weight: 700;
 }
 
 #My-Skills p{
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
 }
 
 #Projects h1{
     font-family: serif;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
 }
 #Projects h2{
     font-family: sans-serif;
-    font-size:35px;
+    font-size:25px;
     font-weight: 900;
 }
 
 #Projects p{
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
 }
 
