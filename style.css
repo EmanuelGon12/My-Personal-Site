@@ -1,0 +1,335 @@
+  
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:96px; 
+    letter-spacing: 2px;
+}
+
+#My-Skills h2{
+    font-family: serif;
+    font-size: 45px;
+    font-weight: 800;
+}
+#My-Skills h3{
+    font-family: sans-serif;
+    font-size:35px;
+    font-weight: 700;
+}
+
+#My-Skills p{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#Projects h1{
+    font-family: serif;
+    font-size: 45px;
+    font-weight: 800;
+}
+#Projects h2{
+    font-family: sans-serif;
+    font-size:35px;
+    font-weight: 900;
+}
+
+#Projects p{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+.nombre{
+    font-family: serif;
+    font-size: larger;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3A3960;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding-top: 100px;
+    align-items: center;
+}   
+.descripcion{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    font-family:  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px; 
+    letter-spacing: 2px;
+}
+
+.middle-container{
+    height: 500px;
+}
+
+.imagen-personal{
+    height:200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    
+}
+
+#presentacion p{
+    font-weight: 300;
+    font-size: 25px;
+    font-family: serif;
+    width: 700px;
+    text-align: center;
+    height: 600px;
+}
+
+nav .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+    background-color: #FAF6E3;
+    box-shadow: 0px 8px 20px 0px rgba(119, 119, 119, 0.8);
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+}
+.top-container{
+    background: linear-gradient(300deg, #F2EFE7, #9ACBD0, #48A6A7);
+    background-size: 500% 180%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+#My-Skills p{
+    text-align: justify;
+}
+
+.feature-icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    padding: 3px;
+    background-color: whitesmoke;
+    
+}
+
+@media (max-width: 991.98px) { 
+    .nombre{
+        font-family: serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #3A3960;
+    }
+    .titulo{
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        font-size: 59px;
+        padding-top: 120px;
+        align-items: center;
+    } 
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        font-family:  sans-serif;
+        font-weight: 300;
+        padding: 0px 5px;
+        font-style: normal;
+        font: size 15px; 
+        letter-spacing: 1px;
+    }
+
+    #My-Skills h2{
+        font-family: serif;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    #My-Skills h3{
+        font-family: sans-serif;
+        font-size:30px;
+        font-weight: 700;
+    }
+    
+    #My-Skills p{
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    .top-container img{
+        width: 100%;
+        height: 150px;
+    }   
+    #presentacion p{
+        font-weight: 300;
+        font-size: 17px;
+        font-family: serif;
+        width: 300px;
+        text-align: center;
+    }
+
+    #Projects h1{
+        font-family: serif;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    #Projects h2{
+        font-family: sans-serif;
+        font-size:30px;
+        font-weight: 700;
+    }
+    
+    #Projects p{
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    .image-zoom{
+        height: auto;
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 250px; /* Ajusta el ancho */
+        font-weight: 500;
+        background: #FAF6E3;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navbar-collapse.show {
+        visibility: visible;
+        opacity: 2;
+        transform: translateY(0);
+    }
+
+    /* 🔹 Animación escalonada de los elementos del menú */
+    .navbar-nav .nav-item {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    }
+
+    .navbar-collapse.show .nav-item {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .navbar-collapse.show .nav-item:nth-child(1) { transition-delay: 0.1s; }
+    .navbar-collapse.show .nav-item:nth-child(2) { transition-delay: 0.2s; }
+    .navbar-collapse.show .nav-item:nth-child(3) { transition-delay: 0.3s; }
+    .navbar-collapse.show .nav-item:nth-child(4) { transition-delay: 0.4s; }
+}
+
+/* 🔹 Asegurar que el enlace solo ocupe el ancho del texto */
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;  /* <-- Hace que el enlace solo tenga el ancho del texto */
+}
+
+/* 🔹 Animación de subrayado */
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3A3960;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* 🔹 Mantener la flecha del dropdown */
+.navbar-nav .dropdown-toggle::after {
+    display: inline-block; /* Flecha sigue visible */
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.card{
+    transform: translate3d(0);
+}
+
+.image-zoom {
+    transition: transform 0.5s, box-shadow 0.5s;
+    transform-origin: center; 
+    border-radius: 5%;
+    border:solid  #3A3960 1px;
+  }
+
+  .image-zoom:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }        
+
+/* 🔹 Estado inicial del dropdown (oculto y preparado para animación) */
+.dropdown-menu {
+    display: block;  /* Bootstrap lo oculta con display: none, lo forzamos a estar presente */
+    max-height: 0;
+    background-color: #D8DBBD;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: max-height 1s ease-out, opacity 1s ease, transform 1s ease;
+}
+
+/* 🔹 Cuando el menú se muestra */
+.dropdown-menu.show {
+    max-height: 300px; /* Un valor lo suficientemente grande para mostrar todo el contenido */
+    opacity: 1;
+    
+    transform: translateY(0);
+}
+
+#footer{
+    background:#FAF6E3;
+}
+
+#footer .container{
+    margin: 0;
+    padding: 0;
+}
+
+#footer svg{
+    height: 30px;
+    
+}
+
+
+
+
